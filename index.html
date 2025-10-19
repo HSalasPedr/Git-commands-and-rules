@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GIT COMMANDS AND RULES</h1>
+    <h2>Git Commands</h2>
+    <ul>
+        <li>$ git remote -v                     Ver a qué repo estamos conectados</li>
+        <li>$ git branch						Ver en qué rama estamos trabajando</li>
+        <li>$ git checkout -b {branch}				Actualizar HEAD, crear una nueva rama y cambiar a ella</li>
+        <li>$ git checkout {branch}				Cambiar a una rama ya creada</li>
+        <li>$ git push {desde dónde} {a qué rama}		Enviar los cambios de los archivos seleccionados desde la ubicación de trabajo a la rama especificada</li>
+        <li>$ git switch -						Cambiar a la rama en la que nos encontrábamos anteriormente</li>
+        <li>$ git add .						Stage-ear todos los archivos de la rama actual</li>
+        <li>$ git commit -m “{}”					Hacer un commit de los cambios stage-eados con el mensaje especificado</li>
+        <li>$ gut pull {desde dónde} {rama}			Traer los cambios desde la rama especificada a la ubicación de trabajo especificada</li>
+        <li>$ git status						Mostrar todos los archivos en los que se han realizado cambios</li>
+        <li>$ git diff							Mostrar los cambios realizados en los archivos</li>
+        <li>$ git config pull.rebase false				Abrir el editor para elegir qué cambios persisten en los archivos conflictivos en el siguiente git pull</li>
+    </ul>
+
+    <h2>Git Golden Rules</h2>
+    <ul>
+        <li>Lo que no te toca no se toca</li>
+        <li>Nunca se trabaja en main</li>
+        <li>Nunca se trabaja en dev</li>
+        <li>Siempre se hace el push a la rama de trabajo</li>
+        <li>Las ramas de trabajo tienen que tener nombres descriptivos</li>
+        <li>Los mensajes del commit deben ser descriptivos</li>
+        <li>Antes de un push va un pull</li>
+        <li>Antes de comenzar a trabajar en tu rama, hacer un pull de dev</li>
+        <li>Cada vez que alguien modifique develop, hacer un pull</li>
+        <li>Al crear una rama, hacer un push de esa rama para crearla en github</li>
+    </ul>
+
+
+</body>
+</html>
